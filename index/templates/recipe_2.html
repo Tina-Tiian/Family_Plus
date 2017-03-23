@@ -74,11 +74,13 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="navbar-form navbar-left" role="search">
+                <form class="navbar-form navbar-left" role="search"
+                method="POST" action="/recipe">
                     <div class="form-group">
-                        <input type="text" class="form-control"/>
+                        <input type="text" name="recipe"
+                        value="" class="form-control"/>
                     </div>
-                    <button type="submit" class="btn btn-default">菜谱搜索</button>
+                    <input type="submit" name="search" value="菜谱搜索" class="btn btn-default">
                 </form>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -99,49 +101,150 @@
 		  <br>
 		  <br>
 	  <div class="row clearfix">
-		  <div class="col-md-12 column">
+          <div class="col-md-1 column">
+          </div>
+		  <div class="col-md-6 column">
 			  <h3>
-				  菜谱名称
-			  </h3><img alt="" src="../static/A2-01.jpg" />
+				  葱花鸡蛋饼
+			  </h3>
 		  </div>
-	  </div>
+          <div class="col-md-5 column">
+          </div>
+      </div>
 		  <br>
-		  <br>
+      <div class="row clearfix">
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-6 column">
+              <img alt="" src="../static/A2-01.jpg" />
+          </div>
+          <div class="col-md-5 column">
+              <dl>
+                  <dt>
+                      用料：
+                  </dt>
+                  <dd>
+                      鸡蛋、面粉、葱花、盐、水、油
+                  </dd>
+              </dl> <span class="lable label-success">爸爸的味道</span>
+              <span class="lable label-success">营养早餐</span>
+          </div>
+      </div>
+      <br>
+      <br>
 	  <div class="row clearfix">
-		  <div class="col-md-4 column">
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-3 column">
 			  <img alt="" src="../static/A2-02.jpg" />
-			  <dl>
-				  <dt>
-					  第一步
-				  </dt>
-				  <dd>
-					  打2-3个鸡蛋并搅拌，放入适量面粉。随后搅拌至均匀。
-				  </dd>
-			  </dl>
 		  </div>
-		  <div class="col-md-4 column">
+		  <div class="col-md-3 column">
 			  <img alt="" src="../static/A2-03.jpg" />
-			  <dl>
-				  <dt>
-					  第二步
-				  </dt>
-				  <dd>
-					  放入少许葱花。
-				  </dd>
-			  </dl>
 		  </div>
-		  <div class="col-md-4 column">
+		  <div class="col-md-3 column">
 			  <img alt="" src="../static/A2-04.jpg" />
-			  <dl>
-				  <dt>
-					  第三步
-				  </dt>
-				  <dd>
-					  放入锅中制成蛋饼。
-				  </dd>
-			  </dl>
 		  </div>
+          <div class="col-md-2 column">
+          </div>
 	  </div>
+      <div class="row clearfix">
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+              <dl>
+				<dt>
+					第一步
+				</dt>
+				<dd>
+					鸡蛋加盐打匀，加入面粉。
+				</dd>
+			</dl>
+          </div>
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+              <dl>
+				<dt>
+					第二步
+				</dt>
+				<dd>
+					添水至浓稠度适中，加入葱花，搅拌均匀。
+				</dd>
+			</dl>
+          </div>
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+              <dl>
+				<dt>
+					第三步
+				</dt>
+				<dd>
+					锅内抹少许油，将面糊倒入中央，然后在蛋饼未成型前，以缓慢的速度慢慢的转动锅底，形成圆形。
+				</dd>
+			</dl>
+          </div>
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+          </div>
+      </div>
+      <div class="row clearfix">
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-3 column">
+			  <img alt="" src="" />
+		  </div>
+		  <div class="col-md-3 column">
+			  <img alt="" src="" />
+		  </div>
+		  <div class="col-md-3 column">
+			  <img alt="" src="" />
+		  </div>
+          <div class="col-md-2 column">
+          </div>
+	  </div>
+      <div class="row clearfix">
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+              <dl>
+				<dt>
+
+				</dt>
+				<dd>
+
+				</dd>
+			</dl>
+          </div>
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+              <dl>
+				<dt>
+
+				</dt>
+				<dd>
+
+				</dd>
+			</dl>
+          </div>
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+              <dl>
+				<dt>
+
+				</dt>
+				<dd>
+
+				</dd>
+			</dl>
+          </div>
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+          </div>
 	  </div>
 </body>
 </html>
