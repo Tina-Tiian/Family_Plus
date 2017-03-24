@@ -45,84 +45,7 @@
     <![endif]-->
 </head>
 <body>
-<div class="container">
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-                <div class="col-md-12 column">
-				</div>
-			</div>
-			<div class="row clearfix">
-				<div class="col-md-4 column">
-					<img alt="140x140" src="http://ibootstrap-file.b0.upaiyun.com/lorempixel.com/140/140/default.jpg" />
-					<dl>
-						<dt>
-							第一步
-						</dt>
-						<dd>
-							A description list is perfect for defining terms.
-						</dd>
-					</dl>
-				</div>
-				<div class="col-md-4 column">
-					<img alt="140x140" src="http://ibootstrap-file.b0.upaiyun.com/lorempixel.com/140/140/default.jpg" />
-					<dl>
-						<dt>
-							第二步
-						</dt>
-						<dd>
-							A description list is perfect for defining terms.
-						</dd>
-					</dl>
-				</div>
-				<div class="col-md-4 column">
-					<img alt="140x140" src="http://ibootstrap-file.b0.upaiyun.com/lorempixel.com/140/140/default.jpg" />
-					<dl>
-						<dt>
-							第三步
-						</dt>
-						<dd>
-							A description list is perfect for defining terms.
-						</dd>
-					</dl>
-				</div>
-			</div>
-			<div class="row clearfix">
-				<div class="col-md-4 column">
-					<img alt="140x140" src="http://ibootstrap-file.b0.upaiyun.com/lorempixel.com/140/140/default.jpg" />
-					<dl>
-						<dt>
-							第四步
-						</dt>
-						<dd>
-							A description list is perfect for defining terms.
-						</dd>
-					</dl>
-				</div>
-				<div class="col-md-4 column">
-					<img alt="140x140" src="http://ibootstrap-file.b0.upaiyun.com/lorempixel.com/140/140/default.jpg" />
-					<dl>
-						<dt>
-							第五步
-						</dt>
-						<dd>
-							A description list is perfect for defining terms.
-						</dd>
-					</dl>
-				</div>
-				<div class="col-md-4 column">
-					<img alt="140x140" src="http://ibootstrap-file.b0.upaiyun.com/lorempixel.com/140/140/default.jpg" />
-					<dl>
-						<dt>
-							第六步
-						</dt>
-						<dd>
-							A description list is perfect for defining terms.
-						</dd>
-					</dl>
-				</div>
-			</div>
-            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><span
@@ -151,11 +74,11 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="navbar-form navbar-left" role="search">
+                <form class="navbar-form navbar-left" role="search" method="POST" action="/recipe">
                     <div class="form-group">
-                        <input type="text" class="form-control"/>
+                        <input type="text" name="recipe" value=""class="form-control"/>
                     </div>
-                    <button type="submit" class="btn btn-default">菜谱搜索</button>
+                    <input type="submit" name="search" value="菜谱搜索" class="btn btn-default">
                 </form>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -171,10 +94,54 @@
                     </li>
                 </ul>
             </div>
-
-        </nav>
-		</div>
-	</div>
-</div>
+      </nav>
+          <br>
+          <br>
+          <br>
+      <div class="row clearfix">
+          <div class="col-md-12 column">
+              <h3>
+                  {{name}}
+              </h3><img alt="" src={{pic}} />
+          </div>
+      </div>
+          <br>
+          <br>
+      <div class="row clearfix">
+          <div class="col-md-4 column">
+              <img alt="" src={{pic1}} />
+              <dl>
+                  <dt>
+                      第一步
+                  </dt>
+                  <dd>
+                      {{text1}}
+                  </dd>
+              </dl>
+          </div>
+          <div class="col-md-4 column">
+              <img alt="" src={{pic2}} />
+              <dl>
+                  <dt>
+                      第二步
+                  </dt>
+                  <dd>
+                      {{text2}}
+                  </dd>
+              </dl>
+          </div>
+          <div class="col-md-4 column">
+              <img alt="" src={{pic3}} />
+              <dl>
+                  <dt>
+                      第三步
+                  </dt>
+                  <dd>
+                      {{text3}}
+                  </dd>
+              </dl>
+          </div>
+      </div>
+      </div>
 </body>
 </html>
