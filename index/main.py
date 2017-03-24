@@ -14,16 +14,41 @@ def recipe():
 	if request.method == 'POST':
 		recipe = request.form['recipe']
 
-		if recipe == "土豆饼":
+		if recipe == "土豆丝鸡蛋饼":
 			return render_template('recipe_1.html')
 
-		elif recipe == "鸡蛋饼":
+		elif recipe == "葱花鸡蛋饼":
 			return render_template('recipe_2.html')
 
-		elif recipe == "小龙虾":
+		elif recipe == "盐水虾":
 			return render_template('recipe_3.html')
+
+		elif recipe == "韭菜鸡蛋摊饼":
+			return render_template('recipe_4.html')
+
+		elif recipe == "香辣虾":
+			return render_template('recipe_5.html')
+
+		elif recipe == "蒜香杏鲍菇":
+			return render_template('recipe_6.html')
+
+		elif recipe == "蒜蓉蒸虾":
+			return render_template('recipe_7.html')
+
+		elif recipe == "土豆烧排骨":
+			return render_template('recipe_8.html')
+
+		elif recipe == "双椒煎排骨":
+			return render_template('recipe_9.html')
+
+		elif recipe == "耗油杏鲍菇":
+			return render_template('recipe_10.html')
+
+		elif recipe == "虾仁豆腐":
+			return render_template('recipe_11.html')
+
 		else:
-			return "对不起，没有您要的菜谱"
+			return "对不起，您要查找的菜谱不在搜索范围内。"
 
 
 if __name__ == "__main__":
