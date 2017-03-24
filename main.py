@@ -1,28 +1,24 @@
-
 # -*- coding: utf-8 -*-
 from flask import Flask, request
 import hashlib
 
 app = Flask(__name__)
 
-@app.route('/wechat', methods=['GET'])
-def checkSignature():
-    token = "Family_Plus"
-    signature = request.GET.get('signature', None) 
-    timestamp = request.GET.get('timestamp', None)
-    nonce = request.GET.get('nonce', None)
-    echostr = request.GET.get('echostr', None)
-    tmpList = [token, timestamp, nonce]
-    tmpList.sort()
-    tmpstr = "%s%s%s" % tuple(tmpList)
-    hashstr = hashlib.sha1(tmpstr).hexdigest()
-    if hashstr == signature:
-        print("hashstr")
-        print("signature")
-        return echostr
-    else:
-        print("attack!")
-        return None
 
-if __name__ == '__main__':
-    app.run(host='112.74.87.38',port='80')
+@app.route('/', methods=['GET'])
+def wechat_verify():
+    signature = request.args.get('signature')
+    timestamp = request.args.get('timestamp')
+    nonce = request.args.get('nonce')
+    echostr = request.args.get('echostr')
+
+    token = 'Family_Plus'
+    tmplist = [token, timestamp, nonce]
+    print(tmplist)
+    tmplist.sort()
+    tmpstr = "%s%s%s" % tuple(tmplist)
+    hashstr = hashlib.sha1(tmpstr.encode('utf-8')).hexdigest()
+
+    if hashstr == signature:
+        return echostr
+    return 'access verification fail'
