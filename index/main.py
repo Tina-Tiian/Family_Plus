@@ -8,6 +8,11 @@ app = Flask(__name__)
 def index():
 	return render_template('cover.html')
 
+@app.route('/category_1')
+def menu():
+	print(request.args)
+	return render_template('category_1.html')
+
 
 @app.route('/recipe', methods=['GET','POST'])
 def recipe():
@@ -15,6 +20,7 @@ def recipe():
 		recipe = request.form['recipe']
 
 		if recipe == "土豆丝鸡蛋饼":
+			print(request.args)
 			return render_template('recipe_1.html')
 
 		elif recipe == "葱花鸡蛋饼":
