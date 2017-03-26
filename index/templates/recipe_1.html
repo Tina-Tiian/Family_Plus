@@ -50,7 +50,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><span
                         class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="#">我家味道</a>
+                <a class="navbar-brand" href='/'>我家味道</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -60,24 +60,22 @@
                                 class="caret"></strong></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#">妈妈的味道</a>
+                                <a href='/category_1'>妈妈的味道</a>
                             </li>
                             <li>
                                 <a href="#">爸爸的味道</a>
                             </li>
                             <li>
-                                <a href="#">五行缺辣</a>
+                                <a href="#">五行缺肉</a>
                             </li>
-                            <li>
-                                <a href="#">专治三高</a>
-                            </li>
+                      
                         </ul>
                     </li>
                 </ul>
                 <form class="navbar-form navbar-left" role="search"
-                method="POST" action="/recipe">
+                method="POST" action="/recipe/name">
                     <div class="form-group">
-                        <input type="text" name="recipe"
+                        <input type="text" name="name"
                         value="" class="form-control"/>
                     </div>
                     <input type="submit" name="search" value="菜谱搜索" class="btn btn-default">
