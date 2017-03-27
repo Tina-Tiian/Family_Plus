@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>蒜蓉蒸虾</title>
+
+    <!-- Bootstrap -->
+
+    <script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+            -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>a
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<body style="background-image:url(../static/background.jpg);"></body>
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><span
+                        class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href='/'>我家味道</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">菜谱系列<strong
+                                class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                              <a href="/Mother_category">妈妈的味道</a>
+                            </li>
+                            <li>
+                                <a href="/Father_category">爸爸的味道</a>
+                            </li>
+                            <li>
+                                <a href="/Meat_category">五行缺肉</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search"
+                method="POST" action="/recipe">
+                    <div class="form-group">
+                        <input type="text" name="recipe"
+                        value="" class="form-control"/>
+                    </div>
+                    <input type="submit" name="search" value="菜谱搜索" class="btn btn-default">
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">设置<strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">账户</a>
+                            </li>
+                            <li>
+                                <a href="#">退出</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+	  </nav>
+		  <br>
+		  <br>
+		  <br>
+	  <div class="row clearfix">
+          <div class="col-md-1 column">
+          </div>
+		  <div class="col-md-6 column">
+			  <h3>
+				  蒜蓉蒸虾
+			  </h3>
+		  </div>
+          <div class="col-md-5 column">
+          </div>
+      </div>
+		  <br>
+      <div class="row clearfix">
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-6 column">
+              <img alt="" src="../static/Garlicshrimp-final.jpg" class="img-thumbnail" />
+          </div>
+          <div class="col-md-5 column">
+              <dl>
+                  <dt>
+                      用料：
+                  </dt>
+                  <dd>
+                      虾、蒜、盐、糖、芝麻油、鲜味生抽
+                  </dd>
+              </dl> <span class="label label-success">妈妈的味道</span>
+              <span class="label label-warning">五行缺肉</span>
+              <span class="label label-default">美颜高蛋白</span>
+          </div>
+      </div>
+      <br>
+      <br>
+	  <div class="row clearfix">
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-3 column">
+			  <img alt="" src="../static/Garlicshrimp-step1.jpg" />
+		  </div>
+		  <div class="col-md-3 column">
+			  <img alt="" src="../static/Garlicshrimp-step2.jpg" />
+		  </div>
+		  <div class="col-md-3 column">
+			  <img alt="" src="../static/Garlicshrimp-step3.jpg" />
+		  </div>
+          <div class="col-md-2 column">
+          </div>
+	  </div>
+      <div class="row clearfix">
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+              <dl>
+				<dt>
+					第一步
+				</dt>
+				<dd>
+					大虾先用水清洗，去须去脚，用剪刀逆剪去虾枪，拿出沙包，用剪刀剪开后背的壳或直接从中片开，我选择片开，
+                    但如果怕危险剪开后背就行了。
+				</dd>
+			</dl>
+          </div>
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+              <dl>
+				<dt>
+					第二步
+				</dt>
+				<dd>
+					蒜要多，拨2头出来，切成末，别太碎了，粗着点有口感，用料理机切更快。
+				</dd>
+			</dl>
+          </div>
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+              <dl>
+				<dt>
+					第三步
+				</dt>
+				<dd>
+					锅里放色拉油，多少蒜就放多少油，用体积算，如一碗蒜就放一碗油，油烧热，关火（关键哦，关火哦）蒜入锅爆一下，因为关了火，
+                    所以马上降温了，然后在蒜油里调味，加盐糖麻油鲜味生抽，就成了蒜蓉酱，简单吧~其实很简单，但味道不打折扣，蒸虾，蒸鱼，
+                    蒸排骨，蒸娃娃菜，蒸牡蛎。。。。。。
+				</dd>
+			</dl>
+          </div>
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+          </div>
+      </div>
+      <div class="row clearfix">
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-3 column">
+			  <img alt="" src="../static/Garlicshrimp-step4.jpg" />
+		  </div>
+		  <div class="col-md-3 column">
+			  <img alt="" src="" />
+		  </div>
+		  <div class="col-md-3 column">
+			  <img alt="" src="" />
+		  </div>
+          <div class="col-md-2 column">
+          </div>
+	  </div>
+      <div class="row clearfix">
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+              <dl>
+				<dt>
+                    第四步
+				</dt>
+				<dd>
+                    将蒜蓉酱调均匀淋在虾上，入蒸锅蒸8-10分钟即可，蒸好以后撒些葱花，也不用呲油了，因油都够了。
+				</dd>
+			</dl>
+          </div>
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+              <dl>
+				<dt>
+
+				</dt>
+				<dd>
+
+				</dd>
+			</dl>
+          </div>
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+              <dl>
+				<dt>
+
+				</dt>
+				<dd>
+
+				</dd>
+			</dl>
+          </div>
+          <div class="col-md-1 column">
+          </div>
+          <div class="col-md-2 column">
+          </div>
+	  </div>
+</body>
+</html>
