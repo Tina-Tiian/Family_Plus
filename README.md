@@ -14,7 +14,7 @@ Build a bridge between families
 
 2017.03.05    队友首次聚首，确定产品功能（第一版）与人员分工
 
-2017.03.06    结业项目正式报名 [组建战队，完成结业项目吧！(https://github.com/AIMinder/Py103/issues/221)
+2017.03.06    结业项目正式报名 [组建战队，完成结业项目吧！](https://github.com/AIMinder/Py103/issues/221)
 
 2017.03.12    不断跳坑、出坑、弃坑，从微信平台转向web平台
 
